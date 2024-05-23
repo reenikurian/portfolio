@@ -1,0 +1,238 @@
+*{
+    font-family: "Sedan SC",serif;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    /* view port height,1vh=1% of the height
+    vh refers to the visible portion of the browser window*/
+    /*height:100% mean:100 percentage of the containing element*/
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    width: 85%;
+    align-items: center;/* to vertically place child elements center*/
+    
+}
+ul li{
+    display: inline;
+    margin: 10px 25px;
+}
+.link{
+    font-size: 21px;
+}
+.link:hover{
+    color: red;
+}
+#last_name{
+    color: orange;
+}
+.title{
+    margin-left: 8%;
+    margin-top: 11%;
+}
+.title h1{
+    font-size: 60px;
+    font-weight: 800;
+}
+.title p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.title a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 7px;
+    font-size: 18px;
+    
+}
+.images{
+    width: 45%;
+    height:80% ;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+    top: 200px;
+}
+.imagegroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    /*it moves the element horizontally by 50% of its own within the opposite direction*/
+    transition: bottom 1s,left 2s;
+}
+.images:hover #shape{
+    bottom: 70px;
+}
+.images:hover #girl{
+left: 40%;
+}
+#about{
+    margin: 13% 8% 0px 8%;
+}
+.heading{
+    text-align: center; /*to align child elements horozontally center*/
+}
+.heading h3{
+    color: green;
+    font-size: 20px;
+}
+.heading h1{
+    font-size: 28px;
+    font-weight: 600;
+}
+.about_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 70% 30%;
+    column-gap: 50px;
+    margin-top: 3%;
+}
+.abt_img img{
+    width: 80%;
+
+}
+.about_details{
+    font-size: 18px;
+}
+.information{
+margin-top: 20px;
+}
+.info_box{
+    margin-bottom: 2rem;/* 1rem=16px*/
+    font-size: 20px;
+
+}
+.info_box span{
+    margin-left: 15px;
+}
+#skills{
+    margin: 8% 8% 0px 8%;
+}
+.skill_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 50px;
+    margin-top: 4%;
+}
+.progress_bar{
+    margin-top: 25PX;
+}
+.bar_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.bar_container h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bar_container span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bar{
+    width: 100%;
+    height: 8px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+}
+.html_bar{
+    background-color: orange;
+    width: 95%;
+}
+.css_bar{
+    background-color: orange;
+    width: 80%;
+}
+.js_bar{
+    background-color: orange;
+    width: 70%;
+}
+.react_bar{
+    background-color: orange;
+    width: 60%;
+}
+.skill_container img{
+    width: 91%;
+    margin-left: 40px;
+
+}
+#contact{
+    margin: 8% 8% 0px 8%;
+}
+.icon_set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.icon,.up_arrow{
+    height: 50px;
+    width: 50px;
+   justify-content: center;
+   align-items: center;
+    margin: 0px 20px ;
+    border-radius: 50%;
+
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, red , yellow);
+}
+.icon:hover i{
+    color: white;
+    animation: shake 0.7s;
+}
+@keyframes shake {
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+footer{
+    margin: 5rem 0px;
+}
+footer p{
+    text-align: center;
+    font-weight: 600;
+}
+.up_arrow{
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to bottom right, red , yellow);
+    
+}
+html{
+    scroll-behavior: smooth ;
+}
